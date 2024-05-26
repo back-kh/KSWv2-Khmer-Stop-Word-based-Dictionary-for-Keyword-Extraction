@@ -1,0 +1,1 @@
+# KSWv2-Khmer-Stop-Word-based-Dictionary-for-Keyword-Extraction
