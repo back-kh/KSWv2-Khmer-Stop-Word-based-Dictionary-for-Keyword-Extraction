@@ -28,7 +28,9 @@ Both dictionaries contain common Khmer function words, particles, and filler wor
 This approach directly matches and removes stop words from the input text without using word segmentation.
 
 **Example:**
-**Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា** 
+```bash
+**Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា**
+
 **Filtered Text: ប្រាសាទអង្គរវត្តស្ថិតខេត្តសៀមរាបប្រទេសកម្ពុជា**
 
 ---
@@ -37,6 +39,7 @@ This approach directly matches and removes stop words from the input text withou
 In this approach, the text is segmented using [khmercut](https://github.com/seanghay/khmercut-rs) before filtering out the stop words.
 
 **Example:**
+```bash
 **Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា** 
 **Segmented Words: ['នេះ', 'គឺជា', 'ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'នៅក្នុង', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']** 
 **Filtered Words: ['ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']** 
@@ -48,10 +51,11 @@ In this approach, the text is segmented using [khmercut](https://github.com/sean
 This approach demonstrates the use of [Khmer-NLTK](https://github.com/VietHoang1512/khmer-nltk) for text segmentation before filtering.
 
 **Example:**
-**Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា** 
-**Segmented Words: ['នេះ', 'គឺជា', 'ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'នៅក្នុង', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']** 
-**Filtered Words: ['ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']** 
-**Filtered Text: ប្រាសាទ អង្គរវត្ត ស្ថិត ខេត្ត សៀមរាប ប្រទេស កម្ពុជា**
+```bash
+Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា
+Segmented Words: ['នេះ', 'គឺជា', 'ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'នៅក្នុង', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']
+Filtered Words: ['ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']
+Filtered Text: ប្រាសាទ អង្គរវត្ត ស្ថិត ខេត្ត សៀមរាប ប្រទេស កម្ពុជា
 
 ---
 
