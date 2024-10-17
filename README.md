@@ -30,21 +30,19 @@ This approach directly matches and removes stop words from the input text withou
 **Example:**
 ```bash
 **Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា**
-
 **Filtered Text: ប្រាសាទអង្គរវត្តស្ថិតខេត្តសៀមរាបប្រទេសកម្ពុជា**
-
----
+```
 
 ### 2. Stop Word Filtering with Segmentation (Using khmercut)
 In this approach, the text is segmented using [khmercut](https://github.com/seanghay/khmercut-rs) before filtering out the stop words.
 
 **Example:**
 ```bash
-**Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា** 
-**Segmented Words: ['នេះ', 'គឺជា', 'ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'នៅក្នុង', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']** 
-**Filtered Words: ['ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']** 
-**Filtered Text: ប្រាសាទ អង្គរវត្ត ស្ថិត ខេត្ត សៀមរាប ប្រទេស កម្ពុជា**
-
+Original Text: នេះគឺជាប្រាសាទអង្គរវត្តស្ថិតនៅក្នុងខេត្តសៀមរាបប្រទេសកម្ពុជា
+Segmented Words: ['នេះ', 'គឺជា', 'ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'នៅក្នុង', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']
+Filtered Words: ['ប្រាសាទ', 'អង្គរវត្ត', 'ស្ថិត', 'ខេត្ត', 'សៀមរាប', 'ប្រទេស', 'កម្ពុជា']
+Filtered Text: ប្រាសាទ អង្គរវត្ត ស្ថិត ខេត្ត សៀមរាប ប្រទេស កម្ពុជា
+```
 ---
 
 ### 3. Stop Word Filtering with Segmentation (Using Khmer-NLTK)
