@@ -64,7 +64,7 @@ Filtered Text: ប្រាសាទ អង្គរវត្ត ស្ថិត
    git clone https://github.com/your-username/khmer-stopword-dictionary.git
    cd khmer-stopword-dictionary
    Install dependencies:
-   pip install khmercut khmer-nltk
+   pip install khmercut khmer-nltk / pip install -r requirements.txt
    python Khmer_stop_word_using_DirectFilter.py
    python Khmer_stop_word_using_KhmerCUT.py
    python Khmer_stop_word_using_KhmerNLTK.py
